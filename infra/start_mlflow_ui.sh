@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#load python
+#load python 3.9
 module load python/3.9
 
 #activate virtual environment
