@@ -9,12 +9,14 @@
 #SBATCH --mail-user=kiechle@ualberta.ca
 #SBATCH --mail-type=BEGIN,END
 
+#load python 3.9
 module load python/3.9
 
-source projects/def-uofavis-ab/jkiechle/CoMA/env/bin/activate
+#activate virtual environment
+cd && source projects/def-uofavis-ab/jkiechle/CoMA/env/bin/activate
 
-cd projects/def-uofavis-ab/jkiechle/CoMA/Hippocampus_CoMA/ && git pull
+#pull latest version of GIT repository
+cd && cd projects/def-uofavis-ab/jkiechle/CoMA/Hippocampus_CoMA/ && git checkout dev && git pull
 
-#tar -xzf ~/projects/def-uofavis-ab/dmiller/COMA_processed.tar.gz -C $SLURM_TMPDIR
-
-#python main.py --data_dir $SLURM_TMPDIR/COMA_data --split sliced --split_term sliced
+#execute main script
+cd /src/ && python main.py
