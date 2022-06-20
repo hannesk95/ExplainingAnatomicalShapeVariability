@@ -9,9 +9,11 @@
 #SBATCH --mail-user=kiechle@ualberta.ca
 #SBATCH --mail-type=BEGIN,END
 
-module load python/3.8
+module load python/3.9
 
 source projects/def-uofavis-ab/jkiechle/CoMA/env/bin/activate
+
+cd projects/def-uofavis-ab/jkiechle/CoMA/Hippocampus_CoMA/ && git pull
 
 #tar -xzf ~/projects/def-uofavis-ab/dmiller/COMA_processed.tar.gz -C $SLURM_TMPDIR
 
