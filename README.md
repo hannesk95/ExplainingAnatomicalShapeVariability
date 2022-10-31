@@ -1,1 +1,1 @@
-# Hippocampus_CoMA
+# Explaining Shape Variability: <br> Supervised Disentangling Variational Graph Autoencoder 
