@@ -65,6 +65,13 @@ $ python torus_registration.py
 $ python box_registration.py
 ```
 
+The animation below shows the registration process for one specific example. The green shape represents the original mesh and the orange shape the reconstruction. During the optimization process, the orange tamplate shape gets morphed into the orignial shape as close as possible. 
+
+<p align="center">
+  <img src="./figures/registration.gif" />
+</p>
+
+
 ## 3. Evaluate Registration
 
 The 3D mesh registration process is evaluated using the [Hausdorff distance](https://en.wikipedia.org/wiki/Hausdorff_distance) metric
