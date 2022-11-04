@@ -59,7 +59,7 @@ $ source $SLURM_TMPDIR/env/bin/activate
 $ pip install --no-index --upgrade pip
 $ pip install -r registration_requirements.txt
 
-4. Run Script (according to use-case)
+6. Run Script (according to use-case)
 $ python hippocampus_registration.py
 $ python torus_registration.py
 $ python box_registration.py
