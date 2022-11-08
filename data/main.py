@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pyvista as pv
 
-from sdf import *
+from sdf.sdf import *
 from glob import glob
 from tqdm import tqdm
 from contextlib import contextmanager
@@ -15,6 +15,7 @@ from sklearn.preprocessing import MinMaxScaler
 parser = argparse.ArgumentParser(description='Synthetic Dataset')
 parser.add_argument('--dataset', type=str, default='all', choices=['all', 'box_bump', 'torus_bump'])
 args = parser.parse_args()
+
 
 @contextmanager
 def suppress_stdout():
@@ -25,6 +26,7 @@ def suppress_stdout():
             yield
         finally:
             sys.stdout = old_stdout
+
 
 def create_box_bump_files():
     """Create synthetic box data."""
@@ -44,9 +46,9 @@ def create_box_bump_files():
     scaler = MinMaxScaler()
     scaler.fit(feature_range.reshape(-1, 1))
 
+    i = 0
     for x in tqdm(feature_range):
         with suppress_stdout():
-            i = 0
             filepath = f'box_bump/box_bump_{i:03d}.ply'
             filename = filepath.split("/")[-1].split(".")[0]
             b = sphere(0.075).translate((x, 0.275, 0))
@@ -86,9 +88,9 @@ def create_torus_bump_files():
     scaler = MinMaxScaler()
     scaler.fit(feature_range.reshape(-1, 1))
 
+    i = 0
     for angle in tqdm(feature_range):
         with suppress_stdout():
-            i = 0
             filepath = f'torus_bump/torus_bump_{i:03d}.ply'
             filename = filepath.split("/")[-1].split(".")[0]
             x = np.cos(np.deg2rad(angle))
@@ -111,6 +113,7 @@ def create_torus_bump_files():
         filename = mesh_path.split("\\")[-1].split(".")[0]
         mesh = pv.read(mesh_path)
         mesh.save(f"torus_bump\\vtk_files\\{filename}.vtk")
+
 
 if __name__ == "__main__":
 
