@@ -8,4 +8,5 @@ data/sdf/
 
 synthetic_data/box_bump/
 synthetic_data/torus_bump/
-synthetic_data/sdf
+synthetic_data/sdf/
+synthetic_data/_delete/
