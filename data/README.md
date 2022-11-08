@@ -18,9 +18,9 @@ Options:
     --dataset, type=str, default='all', choices=['all', 'box_bump', 'torus_bump'] 
 ```
 
-## 3. Data sneak peek
+## 3. Data preview
 
-The tow GIFs below show what data you can expect to have at hand after running the provided python script. Both datasets consist of 500 shapes in total.
+The tow GIFs below show what synthtic data you can expect to have at hand after running the provided python script. Both syntehtic datasets consist of 500 shapes in total.
 
 <p align="center">
   <img src="./figures/box_bump.gif" width="400" />
