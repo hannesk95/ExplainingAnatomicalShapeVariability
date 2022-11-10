@@ -14,3 +14,7 @@ synthetic_data/_delete/
 src/ShapeWorks/data/
 src/ShapeWorks/groomed/
 src/ShapeWorks/shape_model/
+src/ShapeWorks/_delete/
+src/ShapeWorks/.ipynb_checkpoints/
+src/ShapeWorks/orig_particle_reconstruction/
+src/ShapeWorks/pca_particle_reconstruction/
