@@ -17,7 +17,17 @@ Options:
 
 ## 2. Evaluation
 
+### 2.1 Explained variance
+
 <p align="center">
   <img src="./figures/left_hippo.png" width="500" />
   <img src="./figures/right_hippo.png" width="500" /> 
+</p>
+
+### 2.2 Latent traversal
+
+Given that most of the variability is explained by the first four latent variables, a latent traversal is shown based on tweaking these. 
+
+<p align="center">
+  <img src="./figures/latent_traversal.gif" width="750" /> 
 </p>
