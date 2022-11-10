@@ -14,3 +14,10 @@ Options:
     --project_location, type=str, default='shape_model/'
     --spreadsheet_name, type=str, default='hippocampus.xlsx'    
 ```
+
+## 2. Evaluation
+
+<p align="center">
+  <img src="./figures/left_hippo.png" width="500" />
+  <img src="./figures/right_hippo.png" width="500" /> 
+</p>
