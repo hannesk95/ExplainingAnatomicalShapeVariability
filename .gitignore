@@ -1,5 +1,7 @@
 .idea
 .data
+.ipynb_checkpoints
+infra/
 
 data/delete/
 data/box_bump/
@@ -18,3 +20,11 @@ src/ShapeWorks/_delete/
 src/ShapeWorks/.ipynb_checkpoints/
 src/ShapeWorks/orig_particle_reconstruction/
 src/ShapeWorks/pca_particle_reconstruction/
+src/ShapeWorks/mesh_left/
+src/ShapeWorks/mesh_right/
+src/ShapeWorks/reconstruction_left/
+src/ShapeWorks/reconstruction_right/
+src/ShapeWorks/demographics.csv
+
+src/DeepLearning/.ipynb_checkpoints/
+
