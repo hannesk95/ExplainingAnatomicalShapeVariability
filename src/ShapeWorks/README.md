@@ -40,7 +40,7 @@ An interactive version can be found [here]("./figures/worst_reconstruction.html"
 
 ### 3.1 Explained variance
 
-Given that the human hippocampus consists of two seperate tissue structures, a PCA needs to be fitted for both components (i.e., left and right hippocampus) individually.
+Given that the human hippocampus consists of two seperate tissue structures, a PCA needs to be fitted for both components (i.e., left and right hippocampus) individually. As both hippocampus parts are rather similar, the explained variance from both PCA models do not differ to much (expected behaviour). 
 
 <p align="center">
   <img src="./figures/left_hippo.png" width="500" />
