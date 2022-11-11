@@ -15,16 +15,39 @@ Options:
     --spreadsheet_name, type=str, default='hippocampus.xlsx'    
 ```
 
-## 2. Evaluation
+## 2. Reconstruction
 
-### 2.1 Explained variance
+### 2.1 Hausdorff distance
+
+The plot below shows the Hausdorff distance histogram plot (i.e. distance between original mesh and reconstruced mesh) for all 511 hippocampus subjects included in the dataset. 
+
+<p align="center">
+  <img src="./figures/hausdorff.png" width="450" /> 
+</p>
+
+### 2.2 Worst reconstruction 
+
+Overlay plot, where the red 3D mesh represents the original mesh, whereas the gray depicts the reconstruced mesh.
+
+<p align="center">
+  <img src="./figures/worst_reconstruction.png" width="450" /> 
+</p>
+
+An interactive version can be found [here]("./figures/worst_reconstruction.html"). Please open this file using your preferred browser.
+
+
+## 3. Principal Component Analysis (PCA)
+
+### 3.1 Explained variance
+
+Given that the human hippocampus consists of two seperate tissue structures, a PCA needs to be fitted for both components (i.e., left and right hippocampus) individually.
 
 <p align="center">
   <img src="./figures/left_hippo.png" width="500" />
   <img src="./figures/right_hippo.png" width="500" /> 
 </p>
 
-### 2.2 Latent traversal
+### 3.2 Latent variable traversal
 
 Given that most of the variability is explained by the first four latent variables, a latent traversal is shown based on tweaking these. 
 
