@@ -78,7 +78,7 @@ The 3D mesh registration process is evaluated using the [Hausdorff distance](htt
 
 $${\displaystyle d_{\mathrm {H} }(X,Y)=\max \left\lbrace \sup _{x\in X}d(x,Y) \, \sup _{y\in Y}d(X,y) \right\rbrace} \,$$
 
-where $\sup$ represents the supremum, $\inf$ the infimum, and where ${\displaystyle d(a,B)=\inf _{b\in B}d(a,b)} $ quantifies the distance from a point ${\displaystyle a\in X}$ to the subset ${\displaystyle B\subseteq X}$.
+where $\sup$ represents the supremum, $\inf$ the infimum, and where $\displaystyle d(a,B)=\inf _{b\in B}d(a,b)$ quantifies the distance from a point ${\displaystyle a\in X}$ to the subset ${\displaystyle B\subseteq X}$.
 
 The figure below shows the histogram of all Hausdorff distances (i.e., original mesh and reconstructed mesh) for the hippocampus data. 
 
