@@ -49,7 +49,7 @@ Given that the human hippocampus consists of two seperate tissue structures, a P
 
 ### 3.2 Latent variable traversal
 
-Given that most of the variability is explained by the first four latent variables, a latent traversal is shown based on tweaking these. 
+Given that more than 80% of the cumulative variability is explained by the first four latent variables, a latent traversal is shown based on tweaking these. 
 
 <p align="center">
   <img src="./figures/latent_traversal.gif" width="750" /> 
