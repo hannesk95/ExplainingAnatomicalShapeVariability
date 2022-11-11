@@ -22,7 +22,7 @@ Options:
 The plot below shows the Hausdorff distance histogram plot (i.e. distance between original mesh and reconstruced mesh) for all 511 hippocampus subjects included in the dataset. 
 
 <p align="center">
-  <img src="./figures/hausdorff.png" width="450" /> 
+  <img src="./figures/hausdorff.png" width="650" /> 
 </p>
 
 ### 2.2 Worst reconstruction 
