@@ -76,7 +76,7 @@ The animation below shows the registration process for one specific example. The
 
 The 3D mesh registration process is evaluated using the [Hausdorff distance](https://en.wikipedia.org/wiki/Hausdorff_distance) metric
 
-$${\displaystyle d_{\mathrm {H} }(X,Y)=\max \{\,\sup _{x\in X}d(x,Y),\,\sup _{y\in Y}d(X,y)\, \},\!}$$
+$${\displaystyle d_{\mathrm {H} }(X,Y)=\max \{\; \sup _{x\in X}d(x,Y),\,\sup _{y\in Y}d(X,y)\; \},\!}$$
 
 where sup represents the supremum, inf the infimum, and where ${\displaystyle d(a,B)=\inf _{b\in B}d(a,b)} $ quantifies the distance from a point ${\displaystyle a\in X}$ to the subset ${\displaystyle B\subseteq X}$.
 
