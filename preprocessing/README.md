@@ -2,7 +2,7 @@
 
 In this directory, all necessary data preprocessing steps are thoroughly explained in order to obtain 3D mesh data ready for subsequent analysis using ShapeWorks or template-based geometric deep learning approaches. 
 
-## 1. Data Grooming
+## 1. Data Grooming (ShapeWorks)
 All data grooming steps are preformed using [ShapeWorks Python API](http://sciinstitute.github.io/ShapeWorks/notebooks/getting-started-with-notebooks.html). In order to install ShapeWorks, please follow the instructions for your platform (Windows, Mac, Linux) outlined [here](http://sciinstitute.github.io/ShapeWorks/users/install.html).
 
 ### Install additional requirements
@@ -13,7 +13,7 @@ $ pip install -r grooming_requirements.txt
 
 The actual data grooming is performed as outlined in this [notebook](./grooming.ipynb).
 
-## 2. Registration
+## 2. Registration (Deformetrica)
 Correspondence across all 3D mesh shpaes is accomplished using [Deformetrica](http://www.deformetrica.org/). The documentation how to use it can be found [here](https://gitlab.com/icm-institute/aramislab/deformetrica/-/wikis/home).
 
 ### Local installation
