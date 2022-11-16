@@ -13,6 +13,12 @@ synthetic_data/torus_bump/
 synthetic_data/sdf/
 synthetic_data/_delete/
 
+preprocessing/binary_segmentations/
+preprocessing/_delete/
+preprocessing/groomed_data/
+
+utils/__pycache__/
+
 src/ShapeWorks/data/
 src/ShapeWorks/groomed/
 src/ShapeWorks/shape_model/
