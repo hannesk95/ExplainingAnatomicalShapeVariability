@@ -22,8 +22,6 @@ Options:
     --data_dir, type=str, default='binary_segmentations/'
 ```
 
-The actual data grooming is performed as outlined in this [notebook](./grooming.ipynb).
-
 ## 2. Registration
 Correspondence across all 3D mesh shpaes is accomplished using [Deformetrica](http://www.deformetrica.org/). The documentation how to use it can be found [here](https://gitlab.com/icm-institute/aramislab/deformetrica/-/wikis/home).
 
