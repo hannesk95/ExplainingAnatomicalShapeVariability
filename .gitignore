@@ -30,6 +30,8 @@ src/ShapeWorks/mesh_left/
 src/ShapeWorks/mesh_right/
 src/ShapeWorks/reconstruction_left/
 src/ShapeWorks/reconstruction_right/
+src/ShapeWorks/pca_reconstruction_left/
+src/ShapeWorks/pca_reconstruction_right/
 src/ShapeWorks/demographics.csv
 
 src/DeepLearning/.ipynb_checkpoints/
