@@ -1,22 +1,33 @@
-# Data Preprocessing
+# Preprocessing
 
 In this directory, all necessary data preprocessing steps are thoroughly explained in order to obtain 3D mesh data ready for subsequent analysis using ShapeWorks or template-based geometric deep learning approaches (i.e., SpiralNet++). 
 
-## 1. Data Grooming (ShapeWorks)
+## 1. Grooming
 All data grooming steps are preformed using [ShapeWorks Python API](http://sciinstitute.github.io/ShapeWorks/notebooks/getting-started-with-notebooks.html). In order to install ShapeWorks, please follow the instructions for your platform (Windows, Mac, Linux) outlined [here](http://sciinstitute.github.io/ShapeWorks/users/install.html).
 
-### Install additional requirements
+### Install requirements
+
 ```console
 $ pip install --upgrade pip
 $ pip install -r grooming_requirements.txt
 ```
 
+### Run Script
+
+```console
+python grooming.py [args]
+
+Options:       
+    --output_dir, type=str, default='groomed_data/'
+    --data_dir, type=str, default='binary_segmentations/'
+```
+
 The actual data grooming is performed as outlined in this [notebook](./grooming.ipynb).
 
-## 2. Registration (Deformetrica)
+## 2. Registration
 Correspondence across all 3D mesh shpaes is accomplished using [Deformetrica](http://www.deformetrica.org/). The documentation how to use it can be found [here](https://gitlab.com/icm-institute/aramislab/deformetrica/-/wikis/home).
 
-### Local installation
+### Install requiremetens (local)
 
 ```console
 conda install
@@ -26,9 +37,13 @@ or
 
 pip install
 $ pip install deformetrica
+
+install requirements
+$ pip install --no-index --upgrade pip
+$ pip install -r registration_requirements.txt
 ```
 
-### Compute Canada
+### Install requirements and setup prerequisites (Compute Canada)
 
 ```console
 1. Allocate GPU instance
@@ -58,11 +73,18 @@ $ source $SLURM_TMPDIR/env/bin/activate
 5. Install requirements
 $ pip install --no-index --upgrade pip
 $ pip install -r registration_requirements.txt
+```
 
-6. Run Script (according to use-case)
-$ python hippocampus_registration.py
-$ python torus_registration.py
-$ python box_registration.py
+### Run Script
+
+```console
+$ python registration.py [args]
+
+Options:    
+    --data_dir, type=str, default='hippo_data/'    
+    --output_dir, type=str, default='hippo_output/'
+    --template_file, type=str, default='hippo_template/ab300_283_standard.vtk'
+    --use_case, type=str, default='hippocampus', choices=['hippocampus', 'box', 'torus']  
 ```
 
 The animation below shows the registration process for one specific example. The green shape represents the original mesh and the orange shape the reconstruction. During the optimization process, the orange tamplate shape gets morphed into the orignial shape as close as possible. 
