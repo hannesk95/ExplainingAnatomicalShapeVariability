@@ -37,4 +37,5 @@ class SPCA:
         return self.U.T @ X
 
     def inverse_transform(self, Z):
+        #inv = np.linalg.pinv(self.U)
         return (self.U @ Z @ self.H).T
