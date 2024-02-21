@@ -5,5 +5,3 @@ This work proposes a modular geometric deep learning framework that isolates sha
 <p align="center">
   <img src="./figures/guided_vae_new_layout.png" width="800"/>
 </p>
-
-
