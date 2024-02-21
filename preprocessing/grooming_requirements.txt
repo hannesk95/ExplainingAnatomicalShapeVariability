@@ -1,0 +1,7 @@
+nibabel
+open3d
+igl
+meshplot
+tqdm
+pymeshlab
+pyvista
